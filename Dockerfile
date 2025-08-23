@@ -2,7 +2,7 @@ Dockerfile for Node.js
 FROM node:24
 WORKDIR /app
 COPY . .
-ENV hdgdgs
-ENV gsgsggs
+ENV NODE_ENV=staging
+ENV PORT=8080
 EXPOSE 8080
-CMD ["sh", "-c", "nmp run"]
+CMD ["sh", "-c", "npm run"]
