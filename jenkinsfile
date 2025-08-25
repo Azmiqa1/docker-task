@@ -14,7 +14,7 @@ pipeline {
         stage('build') {
             steps {
                 script {
-                    sh "docker build . -t azmiqa1/testing-image:latest"
+                    sh "docker build -t azmiqa1/testing-image:latest" .
             }
         }
 }
