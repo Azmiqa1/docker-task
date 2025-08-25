@@ -17,7 +17,5 @@ pipeline {
                     sh "docker build . -t azmiqa1/testing-image:latest" 
             }
         }
-}
-
         
 }
