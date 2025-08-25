@@ -19,22 +19,5 @@ pipeline {
         }
 }
 
-        stage('checkout') {
-            steps {
-                script {
-                    sh "docker login -u azmiqa1 -p ${{ secrets.DOCKER_HUB_TOKEN }}"
-                    sh "echo ${DOCKER_PASS} | docker login -u 'azmiqa1' --password-stdin"
-                    sh "docker push azmiqa1/testing-image:latest"
-             }
-        }
-}
-
-    post {
-        success {
-            echo "Deployment succeeded!"
-        }
-        failure {
-            echo "Deployment failed!"
-        }
-    }
+        
 }
