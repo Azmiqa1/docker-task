@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKERHUB_USER = 'azmiqa1'
         DOCKERHUB_REPO = 'azmiqa1/testing-image'
-        DOCKER_PASS = credentials('DOCKER_HUB_TOKEN')
+        DOCKER_PASS = credentials('dockerhub-credentials')
     }
 
     stages {
