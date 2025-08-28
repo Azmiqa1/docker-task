@@ -17,7 +17,7 @@ pipeline {
         stage('build') {
             steps {
                 script {
-                    sh "docker build -t ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:latest ." 
+                    sh "docker build -t ${DOCKERHUB_REPO}:latest ." 
             }
         }
     }
