@@ -1,4 +1,3 @@
-Dockerfile for Node.js
 FROM node:24
 WORKDIR /app
 COPY . .
