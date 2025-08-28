@@ -26,7 +26,7 @@ pipeline {
         stage('push') {
             steps {
                 script {
-                    sh "echo ${DOCKER_PASS} | docker login -u '${DOCKER_USER}' --password-stdin"
+                    sh "echo ${DOCKER_PASS} | docker login -u 'azmiqa1' --password-stdin"
                     sh "docker push ${DOCKERHUB_REPO}:latest"
              }
         }
